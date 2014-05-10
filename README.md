@@ -60,7 +60,7 @@ execute.
 java -cp "execLib/*" org.appdynamics.crypto.CryptoTool
 
 Example:
-
+```sh
 java -cp "execLib/*" org.appdynamics.crypto.CryptoTool
 This utility requires a password for it to work.
 Please enter the tool's password.
@@ -70,6 +70,7 @@ Please enter the tool's password.
 [Please re-enter the string to encrpyt]: 
 This is the encrypted value:
 pO6R9GvVPVt65ftbckIX6hR6SesEFDtK
+```
 
 ###To unencrypt the string use the StringLogger class for example:
 ```java
