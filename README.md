@@ -30,15 +30,21 @@ Building:
    a)Follow the instructions on line 15-16 to change the string value on line 19, for example
 
     change this: 
+
         private static final String myKey="a3ApPD4H@m1C5!t00L"; //CHANGE THIS
+
     to this:
+
         private static final String myKey="a3ApPD4HMY-Secrets"; //CHANGE THIS
 
    b)Follow the instructions on line 86 to change the string values on line 91, for example
 
     change this:
+
       StringLogger apmString = new StringLogger("ApMIntElKEY".getBytes(),"ySoecKby".getBytes());
+
     to this:
+
       StringLogger apmString = new StringLogger("ACME1234KEY".getBytes(),"ySoecKby".getBytes());
    
 3. Run ant -f AppD_build.xml
