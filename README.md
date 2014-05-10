@@ -41,11 +41,11 @@ Building:
 
     change this:
 
-      StringLogger apmString = new StringLogger("ApMIntElKEY".getBytes(),"ySoecKby".getBytes());
+      	StringLogger apmString = new StringLogger("ApMIntElKEY".getBytes(),"ySoecKby".getBytes());
 
     to this:
 
-      StringLogger apmString = new StringLogger("ACME1234KEY".getBytes(),"ySoecKby".getBytes());
+      	StringLogger apmString = new StringLogger("ACME1234KEY".getBytes(),"ySoecKby".getBytes());
    
 3. Run ant -f AppD_build.xml
 
