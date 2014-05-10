@@ -1,17 +1,17 @@
 AppDSimpleCrypto
 ================
 
-The AppDSimpleCrypto is a tool that allows the encryption of of strings so that they 
-can be added to configuration files, such as a password in a property files. The tool
+The AppDSimpleCrypto is a tool that allows the encryption of strings so that they 
+can be added to configuration files, such as a password in a property file. The tool
 provides a method to encrypt a string and decrypt the string. The developer must provide
 new strings for tool password and hashing key. If these strings are not used then anyone
 with access to the tool in git can use the default key values to unencrypt the string.
 
 Disclaimer
 ----------
-This tool is intended to be use with other AppDynamics extensions that require that a
-password be placed in a file un-encrypted. The tool will provide a encrypted string that
-can be unencrypted with the same tool. The tool is meant to provide a simple level of security
+This tool is intended to be used with other AppDynamics extensions that require that a
+password be placed in a file most time un-encrypted. The tool will provide an encrypted string 
+that can be unencrypted with the same tool. The tool is meant to provide a simple level of security
 and must not be considered the only level of security. If more security is needed then additional
 ciphers should be used.
 
@@ -65,8 +65,7 @@ Please enter the tool's password.
 This is the encrypted value:
 pO6R9GvVPVt65ftbckIX6hR6SesEFDtK
 
-To unencrypt the string use the StringLogger class for example:
---------------------------------------------------------------
+###To unencrypt the string use the StringLogger class for example:
 import org.appdynamics.crypto.*;
 /**
  *
