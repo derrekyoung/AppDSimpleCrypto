@@ -27,6 +27,7 @@ Building:
 1. Fork the Repo to local machine
 
 2. Using an editor open the file src/org/appdynamics/crypto/CryptoTool.java
+
    a)Follow the instructions on line 15-16 to change the string value on line 19, for example
 
     change this: 
