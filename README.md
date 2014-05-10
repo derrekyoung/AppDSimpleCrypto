@@ -66,11 +66,9 @@ This is the encrypted value:
 pO6R9GvVPVt65ftbckIX6hR6SesEFDtK
 
 ###To unencrypt the string use the StringLogger class for example:
+```java
 import org.appdynamics.crypto.*;
-/**
- *
- * @author gilbert.solorzano
- */
+
 public class TestCypto {
     
     public static void main(String[] args){
@@ -87,4 +85,4 @@ public class TestCypto {
     
 }
 
-
+```
