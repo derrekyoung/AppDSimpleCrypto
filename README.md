@@ -7,6 +7,8 @@ provides a method to encrypt a string and decrypt the string. The developer must
 new strings for tool password and hashing key. If these strings are not used then anyone
 with access to the tool in git can use the default key values to unencrypt the string.
 
+-- If you used 1.0.0 please updated the properties file to point to the new library.
+
 Disclaimer
 ----------
 This tool is intended to be used with other AppDynamics extensions that require that a
