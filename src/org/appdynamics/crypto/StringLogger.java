@@ -64,7 +64,6 @@ public StringLogger(byte[] keyBytes,   byte[] ivBytes) {
 
 public byte[] format1(String str){
     //log.log(Level.INFO,"Getting Apache " + str);
-    //org.apache.commons.codec.binary.Base64 b64=new org.apache.commons.codec.binary.Base64();
     org.apache.commons.codec_1_9.binary.Base64 b64=new org.apache.commons.codec_1_9.binary.Base64();
     //log.log(Level.INFO,"Object created" + str);
     //byte[] val=b64.decode(str);
@@ -76,7 +75,7 @@ public String toUpper1(Object obj) throws InvalidKeyException, InvalidAlgorithmP
     
     byte[] input = toUpper(obj);
 
-    return new org.apache.commons.codec.binary.Base64().encodeToString(input);
+    return new org.apache.commons.codec_1_9.binary.Base64().encodeToString(input);
 }
 
 public String toLower1( byte[]  encrypted) throws InvalidKeyException, InvalidAlgorithmParameterException, IllegalBlockSizeException, BadPaddingException, IOException, ClassNotFoundException {
