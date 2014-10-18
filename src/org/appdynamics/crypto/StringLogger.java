@@ -64,7 +64,8 @@ public StringLogger(byte[] keyBytes,   byte[] ivBytes) {
 
 public byte[] format1(String str){
     //log.log(Level.INFO,"Getting Apache " + str);
-    org.apache.commons.codec.binary.Base64 b64=new org.apache.commons.codec.binary.Base64();
+    //org.apache.commons.codec.binary.Base64 b64=new org.apache.commons.codec.binary.Base64();
+    org.apache.commons.codec_1_9.binary.Base64 b64=new org.apache.commons.codec_1_9.binary.Base64();
     //log.log(Level.INFO,"Object created" + str);
     //byte[] val=b64.decode(str);
     //log.log(Level.INFO,"Array created" + val.toString());

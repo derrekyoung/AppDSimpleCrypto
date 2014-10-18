@@ -20,7 +20,7 @@ Requirements:
 ------------
 * Ant 1.8 or above
 * JDK 1.6 or above
-* Apache's commons-codec-1.9 (provided)
+* Modified Apache's commons-codec_1_9-1.9 (provided)
 
 Building:
 --------

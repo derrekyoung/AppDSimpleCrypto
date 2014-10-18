@@ -7,7 +7,7 @@
     <property name="crypto.tool"                value="org.appdynamics.crypto.CryptoTool"/>
 
     <property name="AppDSimpleCrypto.basename" value="AppDSimpleCyprto"/>
-    <property name="AppDSimpleCrypto.version"     value="1.0.0"/>
+    <property name="AppDSimpleCrypto.version"     value="1.0.1"/>
 
     
     <path id="compile.classpath">
