@@ -2,19 +2,19 @@
 <project name="AppDLicenseCount" default="package" basedir=".">
     <property name="classes.dir"		value="src"/>
     <property name="build.dir"			value="appBuild"/>
-    <property name="lib.dir"			value="${basedir}/lib"/> 
-    <property name="exec.lib.dir"		value="${basedir}/execLib"/> 
+    <property name="lib.dir"			value="${basedir}/lib"/>
+    <property name="exec.lib.dir"		value="${basedir}/execLib"/>
     <property name="crypto.tool"                value="org.appdynamics.crypto.CryptoTool"/>
 
-    <property name="AppDSimpleCrypto.basename" value="AppDSimpleCyprto"/>
+    <property name="AppDSimpleCrypto.basename" value="AppDSimpleCrypto"/>
     <property name="AppDSimpleCrypto.version"     value="1.0.1"/>
 
-    
+
     <path id="compile.classpath">
 	<fileset dir="${exec.lib.dir}/">
 	    <include name="*.jar"/>
 	</fileset>
-    </path> 
+    </path>
 
     <target name="clean">
 	<delete dir="${build.dir}"/>
@@ -27,8 +27,8 @@
         <copy todir="${exec.lib.dir}/">
             <fileset dir="${lib.dir}/">
                 <include name="*.jar"/>
-            </fileset>  
-        </copy>     
+            </fileset>
+        </copy>
     </target>
 
     <target name="compile" depends="init">
@@ -55,11 +55,11 @@
           </fileset>
       </jar>
     </target>
-    
+
     <target name="package" depends="Jar_it">
         <delete file="${exec.lib.dir}/${AppDSimpleCrypto.basename}*"/>
-        <copy file="${build.dir}/${AppDSimpleCrypto.basename}_${AppDSimpleCrypto.version}.jar" 
+        <copy file="${build.dir}/${AppDSimpleCrypto.basename}_${AppDSimpleCrypto.version}.jar"
               tofile="${exec.lib.dir}/${AppDSimpleCrypto.basename}_${AppDSimpleCrypto.version}.jar"/>
     </target>
-    
+
 </project>
